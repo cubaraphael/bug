@@ -3,6 +3,8 @@ Rails.application.routes.draw do
     namespace :pro do
       resources :home, only: :index
     end
+    root 'pro/home#index'
+
   end
 
   root 'home#index'
